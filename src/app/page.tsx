@@ -44,10 +44,19 @@ export default function Home() {
               </div>
             </div>
             <div className="flex flex-col gap-3 sm:flex-row">
-              <Button asChild size="lg" className="h-12 rounded-full bg-white text-[#05060a] hover:bg-white/90">
+              <Button
+                asChild
+                size="lg"
+                className="h-12 rounded-full bg-white text-[#05060a] transition-colors hover:bg-[#2b2f3c] hover:text-white focus-visible:ring-2 focus-visible:ring-white/50"
+              >
                 <Link href="/dashboard">Open dashboard</Link>
               </Button>
-              <Button asChild variant="secondary" size="lg" className="h-12 rounded-full bg-white/10 text-white hover:bg-white/20">
+              <Button
+                asChild
+                variant="secondary"
+                size="lg"
+                className="h-12 rounded-full bg-white text-[#05060a] transition-colors hover:bg-[#2b2f3c] hover:text-white focus-visible:ring-2 focus-visible:ring-white/50"
+              >
                 <Link href="https://clerk.com/docs/nextjs" target="_blank" rel="noreferrer">
                   Clerk docs
                 </Link>
@@ -56,7 +65,7 @@ export default function Home() {
                 variant="outline"
                 asChild
                 size="lg"
-                className="h-12 rounded-full border-white/30 text-white hover:border-white hover:bg-white/10"
+                className="h-12 rounded-full border border-white/40 bg-white text-[#05060a] transition-colors hover:border-white hover:bg-[#2b2f3c] hover:text-white focus-visible:ring-2 focus-visible:ring-white/50"
               >
                 <Link href="https://docs.convex.dev/home" target="_blank" rel="noreferrer">
                   Convex docs
